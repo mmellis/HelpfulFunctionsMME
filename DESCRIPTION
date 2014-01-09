@@ -1,0 +1,10 @@
+Package: HelpfulFunctionsMME
+Type: Package
+Title: A collection of functions that come in handy
+Version: 1.0
+Date: 2013-10-15
+Author: Martha Ellis
+Maintainer: Who to complain to <yourfault@somewhere.net>
+Description: The main function saved here is stepAICc which allows for better searching in a stepwise AIC analysis.
+License: GPL (>=2)
+Imports: raster, rgdal, ggplot2, plyr, lme4

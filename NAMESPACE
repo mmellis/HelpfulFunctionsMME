@@ -1,0 +1,2 @@
+import(raster, rgdal, ggplot2, plyr, lme4)
+exportPattern("^[[:alpha:]]+")
