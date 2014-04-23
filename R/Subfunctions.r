@@ -36,7 +36,7 @@ r2.nakagawa.glm<-function(m, varType=2){
    if('glm' %in% class(m)){
         VarF<-var(as.vector(model.matrix(m) %*% coef(m)))
         VarF/(VarF + pi^2/3)
-   } else if('mer' %in% class(m)) {
+   } else if('glmerMod' %in% class(m)) {
         VarF<-var(as.vector(model.matrix(m) %*% lme4::fixef(m)))
         VarR<-c(det(lme4::VarCorr(m)[[1]]), sum(diag(lme4::VarCorr(m)[[1]])))
         list(marginal=c(VarF/(VarF+VarR+pi^2/3), VarF/(var(fitted(m))+pi^2/3))[varType],
